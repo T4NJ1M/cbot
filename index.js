@@ -1,15 +1,8 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const ytdl = require('ytdl-core');
 const request = require('request');
 const fs = require('fs');
 const ms = require('ms');
-const getYouTubeID = require('get-youtube-id');
-const fetchVideoInfo = require('youtube-info')
-var config = JSON.parse(fs.readFileSync("./settings.json", "utf-8"));
-const TOKEN = config.token;
-const PREF = config.pre;
-const yt_api_key = config.yt_api_key;
 
 var isgay = [
 	"This person is gay!",
