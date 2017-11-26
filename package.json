@@ -1,0 +1,23 @@
+{
+  "name": "cheetah",
+  "version": "1.1.0",
+  "description": "daknbot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "iSkripte",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.1.0",
+    "fs": "0.0.1-security",
+    "get-youtube-id": "^1.0.0",
+    "ms": "^2.0.0",
+    "node-opus": "^0.2.7",
+    "request": "^2.81.0",
+    "return-deep-diff": "^0.2.7",
+    "youtube-info": "^1.1.1",
+    "ytdl-core": "^0.17.1"
+  },
+  "devDependencies": {}
+}
