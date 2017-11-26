@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 const request = require('request');
 const fs = require('fs');
 const ms = require('ms');
-const PREF = "-"
+var PREF = "-"
 
 var isgay = [
 	"This person is gay!",
