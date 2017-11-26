@@ -3,6 +3,7 @@ const bot = new Discord.Client();
 const request = require('request');
 const fs = require('fs');
 const ms = require('ms');
+const PREF = "-"
 
 var isgay = [
 	"This person is gay!",
@@ -28,14 +29,6 @@ bot.on("guildMemberAdd", function(member) {
 bot.on("guildMemberRemove", function(member) {
   member.guild.channels.find("name", "cchangout").send(`**${member.user.tag}** left.`)
  });
-
-var queue = [];
-var isPlaying = [];
-var dispatcher = null;
-var voicechannel = null;
-var skiprequests = 0;
-var skippers = [];
-var isPaused = false;
 
 bot.on("message", function(message) {
 		let args1 = message.content.split(" ").slice(1);
