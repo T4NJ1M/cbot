@@ -46,6 +46,11 @@ bot.on("message", function(message) {
 				  if (message.author.id !== "239823359502843904") return;
 					message.guild.roles.
 				break;*/
+		    	case "oof":
+				 oofmember = message.mentions.first();
+				 if (!oofmember) return message.reply("**YOU MUST CHOOSE SOMEONE TO OOF OR I WILL OOF YOU!**");
+				 message.channel.send(`**YOU JUST OOFED <${oofmember.user.tag}>`);
+				break;
 			case "eval":
 					if (message.author.id !== "239823359502843904") return;
 					try {
