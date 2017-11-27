@@ -47,7 +47,7 @@ bot.on("message", function(message) {
 					message.guild.roles.
 				break;*/
 		    	case "oof":
-				 oofmember = message.mentions.first();
+				 oofmember = message.guild.member(message.mentions.users.first());
 				 if (!oofmember) return message.reply("**YOU MUST CHOOSE SOMEONE TO OOF OR I WILL OOF YOU!**");
 				 message.channel.send(`**YOU JUST OOFED <${oofmember.user.tag}>`);
 				break;
