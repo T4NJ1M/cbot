@@ -17,7 +17,7 @@ var fortunes = [
 	":8ball: Absolutely not"]
 
 bot.on("ready", () => {
-  botonchannel = bot.guild.channels.find("name", "cchangout")
+  botonchannel = bot.guild.defaultChannel
 	
   botonchannel.send("Bot Online")
   console.log("CheetahBot online.")
