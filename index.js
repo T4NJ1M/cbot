@@ -90,7 +90,7 @@ bot.on("message", function(message) {
 					let mutetime = parms[1];
 					if (!mutetime) return message.channel.send("Please specify a duration for the mute.");
 					member4.addRole(muRole.id);
-					message.channel.send(`${member4.user.tag} was muted for ${ms(ms(mutetime), {long: true})}`);
+					message.channel.send(`<@${member4.user.tag}> was muted for ${ms(ms(mutetime), {long: true})}`);
 					var mutelog = new Discord.RichEmbed()
 						.setColor("#00FFFF")
 						.setTimestamp()
