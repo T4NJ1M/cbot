@@ -23,7 +23,7 @@ bot.on("ready", () => {
   botonchannel.send("Bot Online")
   console.log("CheetahBot online.")
 
-  bot.user.setPresence({game:{name: "say ;help", type:0}});
+  bot.user.setPresence({game:{name: "-help", type:0}});
 
 	
  });
