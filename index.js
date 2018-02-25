@@ -217,7 +217,7 @@ bot.on("message", function(message) {
 					 console.log(`info command ran | by: ${message.author}`)
       		break;
      		 case "avatar":
-				 	let member3 = message.mentions.members.first();
+				 	let member3 = message.mentions.users.first();
 					var avatar = new Discord.RichEmbed()
 						.setColor("RANDOM")
 						.setThumbnail(member3.avatarURL)
