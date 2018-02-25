@@ -220,8 +220,7 @@ bot.on("message", function(message) {
 				 	let member3 = message.mentions.members.first();
 					var avatar = new Discord.RichEmbed()
 						.setColor("RANDOM")
-						.setThumbnail(message.author.avatarURL)
-					let member2 = message.mentions.members.first();
+						.setThumbnail(member3.avatarURL)
 					message.channel.sendEmbed(avatar)
           		break;
 			//help commands
