@@ -256,7 +256,11 @@ bot.on("message", function(message) {
 					message.channel.sendEmbed(cmds);
 				break;
 				console.log(`cmds command ran | by: ${message.author}`);
+	                case "leave":
+		           if(!bot.guild.id = "251037754371080202") return
+			    guild.leave();
+		          break;
 	 }});
 
 
-bot.login(process.env.BOT_TOKEN)
+bot.login(Mzg0NDk0NTg5NDIxMjg5NDgy.DPz9Eg.Hy03zNFMN7ynLQTnTxNPcsuO63s)
