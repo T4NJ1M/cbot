@@ -27,7 +27,7 @@ bot.on("ready", () => {
 
 	
  });
-bot.on("guildMemberAdd", function(member) {
+/*bot.on("guildMemberAdd", function(member) {
   member.guild.channels.find("name", "cchangout").send(`<@${member.user.id}> joined.`)
  });
 bot.on("guildMemberRemove", function(member) {
@@ -49,7 +49,7 @@ bot.on("message", function(message) {
 			/*case "deleteallroles":
 				  if (message.author.id !== "239823359502843904") return;
 					message.guild.roles.
-				break;*/
+				break;
 		    	case "oof":
 				 oofmember = message.guild.member(message.mentions.users.first());
 				 if (!oofmember) return message.reply("**YOU MUST CHOOSE SOMEONE TO OOF OR I WILL OOF YOU!**");
@@ -75,7 +75,7 @@ bot.on("message", function(message) {
 					let ROLE = message.guild.roles.find("name", "Server_Moderators");
 					if (!message.member.roles.has(ROLE.id)) return message.reply("you don't have the permissions for that.");
 					let messagecount = parseInt(result);
-					/*if (typeof args !== "number") return message.reply("you must supply a number");*/
+					if (typeof args !== "number") return message.reply("you must supply a number");
 					if (messagecount > 100 || messagecount < 1 || messagecount === NaN) return message.channel.send("You must choose a number between 1 and 100.");
 					message.channel.fetchMessages({limit: messagecount}).then(messages => message.channel.bulkDelete(messages));
 					console.log(`Purged ` + messagecount + ` messages from ${message.channel.name}`);
@@ -254,7 +254,7 @@ bot.on("message", function(message) {
 						.addField("Help commands", ";help\n;faq\n;cmds")
 						.setColor("0x04fff9")
 					message.channel.sendEmbed(cmds);
-				break;
+				break;*/
 				console.log(`cmds command ran | by: ${message.author}`);
 	                case "leave":
 		           if(!bot.guild.id = "251037754371080202") return
