@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+channel.sendconst Discord = require('discord.js');
 const bot = new Discord.Client();
 const request = require('request');
 const fs = require('fs');
@@ -173,7 +173,7 @@ bot.on("message", function(message) {
 					 .addField("ID", `${usernameA.id}`)
 					 .addField("Account Made", `${usernameA.createdAt}`)
 					 .setColor("#9B59B6")
-				 	message.channel.sendEmbed(userinfo);
+				 	message.channel.send(userinfo);
 					console.log(`Userinfo command ran | by: ${message.author}`);
 			 	break;
 			case "membercount":
@@ -213,7 +213,7 @@ bot.on("message", function(message) {
 			   		 .addField("Co Developer", "zRetronix#4181")
 			   		 .setColor("ff3700")
 			   		 .setTimestamp()
-				 	 message.channel.sendEmbed(info)
+				 	 message.channel.send(info)
 					 console.log(`info command ran | by: ${message.author}`)
       		break;
      		 case "avatar":
@@ -221,7 +221,7 @@ bot.on("message", function(message) {
 					var avatar = new Discord.RichEmbed()
 						.setColor("RANDOM")
 						.setThumbnail(member3.avatarURL)
-					message.channel.sendEmbed(avatar)
+					message.channel.send(avatar)
           		break;
 			//help commands
 			case "help":
@@ -230,7 +230,7 @@ bot.on("message", function(message) {
 						.addField("Welcome to the help section", "Hello and welcome to the help section. If you need any kind of help, please DM TanjimJHynes#0817 and wait patienty until he replies.")
 						.setColor("04fff9")
 						.setFooter("Do ;cmds for a full list of commands.")
-					message.channel.sendEmbed(help)
+					message.channel.send(help)
 					console.log(`help command ran | by: ${message.author}`);
 				break;
 			case "faq":
@@ -242,7 +242,7 @@ bot.on("message", function(message) {
 				.setDescription("A list of frequently asked questions.")
 				.setTimestamp()
 				.setColor("0x04fff9")
-				message.channel.sendEmbed(faq);
+				message.channel.send(faq);
 				break;
 				console.log(`faq command ran | by: ${message.author}`);
 			case "cmds":
@@ -253,7 +253,7 @@ bot.on("message", function(message) {
 						.addField("Misc commands", ";gaytest [mention]\n;bork\n;fire\n;8ball [question]\n;ping\n;avatar [mention]\n;info\n;userinfo [mention]\n;membercount")
 						.addField("Help commands", ";help\n;faq\n;cmds")
 						.setColor("0x04fff9")
-					message.channel.sendEmbed(cmds);
+					message.channel.send(cmds);
 				break;
 				console.log(`cmds command ran | by: ${message.author}`);
 	 }});
