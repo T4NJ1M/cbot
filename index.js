@@ -17,17 +17,17 @@ var fortunes = [
 	":8ball: Absolutely not"]
 
 bot.on("ready", () => {
-  /*cheetahclothing = bot.guilds.find("name", "Cheetah Clothing")
+  cheetahclothing = bot.guilds.find("name", "Cheetah Clothing")
   botonchannel = cheetahclothing.channels.find("name", "cchangout")
 	
-  botonchannel.send("Bot Online")*/
+  botonchannel.send("Bot Online")
   console.log("CheetahBot online.")
 
   bot.user.setPresence({game:{name: "-help", type:0}});
 
 	
  });
-/*bot.on("guildMemberAdd", function(member) {
+bot.on("guildMemberAdd", function(member) {
   member.guild.channels.find("name", "cchangout").send(`<@${member.user.id}> joined.`)
  });
 bot.on("guildMemberRemove", function(member) {
@@ -254,13 +254,9 @@ bot.on("message", function(message) {
 						.addField("Help commands", ";help\n;faq\n;cmds")
 						.setColor("0x04fff9")
 					message.channel.sendEmbed(cmds);
-				break;*/
-				//console.log(`cmds command ran | by: ${message.author}`);
-	                case "leave":
-		           if(!mesaage.channel.guild.id = "251037754371080202") return
-			    guild.leave();
-		          break;
+				break;
+				console.log(`cmds command ran | by: ${message.author}`);
 	 }});
 
 
-bot.login(Mzg0NDk0NTg5NDIxMjg5NDgy.DPz9Eg.Hy03zNFMN7ynLQTnTxNPcsuO63s)
+bot.login(process.env.BOT_TOKEN)
