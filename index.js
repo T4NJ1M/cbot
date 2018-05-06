@@ -46,7 +46,7 @@ bot.on("message", function(message) {
     switch (args[0].toLowerCase()) {
 
 			//hidden commands
-			/*case "deleteallroles":
+			case "deleteallroles":
 				  if (message.author.id !== "239823359502843904") return;
 					message.guild.roles.
 				break;
