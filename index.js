@@ -258,4 +258,4 @@ bot.on("message", function(message) {
 	 }});
 
 
-bot.login(process.env.BOT_TOKEN)
+bot.login("MzMwNTUzMDM0MzYxMDEyMjM2.XYlKbQ.XBMlh9XMpeFLMxgw0GdUUiLSNPo")
